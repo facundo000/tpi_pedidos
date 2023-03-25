@@ -1,0 +1,127 @@
+:root {
+    --color-principal: #00132C;
+    --color-secundario: #1553a5;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+
+    --font-family: 'Raleway', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    line-height: 2;
+  }
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+/* HEADER */
+.logo {
+    width: 7rem;
+    height: 7rem;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--negro);
+    margin: -1.2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+    padding: 3.5rem 5rem;
+}
+.navegacion {
+    display: none;
+}
+.menu-boton {
+    color: #ffffff;
+        height: 2rem;
+        width: 2rem;
+}
+/* FORMULARIO */
+.titulo-subtitulo {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.formulario {
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.bg {
+    background-color: var(--color-secundario);
+    padding: 2rem;
+    filter: drop-shadow(10px 5px var(--negro));
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    align-items: center;
+    
+   }
+.icn {
+    margin-left: 1rem;
+}
+.rellenar {
+    display: flex;
+    gap: 1.5rem;
+    border: var(--color-principal) solid;
+    border-width: 1.5px;
+    
+}
+.campo__label{
+    text-align: left;
+}
+.campo__field{
+    border: 1px solid var(--blanco);
+}
+.btn{
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00132c;
+    padding: 10px 30px;
+    border: solid #fffffff2 1px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0px;
+    transition : 854ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.btn:hover{
+    transition : 854ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 1px #0066cc;
+}
+
+@media (min-width: 768px){
+   
+.menu-boton {
+    display: none;
+    }
+.navegacion {
+    display: flex;
+    gap: 5rem;
+   }
+.bg {
+    margin: 0 25%; 
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedidos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Pedidos</title>
+</head>
+<body>
+  <header> <!--HEADER-->
+  <menu class="barra">
+    <div class="logo">
+      <a href="pedidos.html"><img class="logo" src="./img/logo-tienda.png" alt="logo de tienda"></a>
+    </div>
+    <nav class="navegacion">
+      <a href="#">Inicio</a>
+      <a href="#">Presentación</a>
+      <a href="#">Contácto</a>
+      <a href="#">Pedidos</a>
+    </nav>
+    <img class="menu-boton" src="./img/hamburger-menu.svg" alt="Menú">
+  </menu>
+</header>
+  <form class="formulario"> <!--FORMULARIO-->
+    <div class="bg">
+    <div class="titulo-subtitulo">
+      <h2>Mis Pedidos</h2>
+      <h3>Completa los campos para obtener información de tu pedido.</h3>
+    </div>
+    <div class="campo">
+      <label class="campo__label" for="nombre">Nombre:</label>
+      <div class="rellenar">
+        <i class="bi bi-person-fill icn"></i>
+        <input class="campo__field" type="text" id="nombre" name="nombre" placeholder="escribe tu nombre...." required>
+      </div>
+    </div>
+    <div class="campo">
+      <label class="campo__label" for="correo">Correo electrónico:</label>
+      <div class="rellenar">
+        <i class="bi bi-envelope-at-fill icn"></i>
+        <input class="campo__field" type="email" id="correo" name="correo" placeholder="escribe tu correo...." required>
+    </div>
+    </div>
+    <div class="campo">
+      <label class="campo__label" for="documento">Dni:</label>
+      <div class="rellenar">
+        <i class="bi bi-person-badge icn"></i>
+        <input class="campo__field" type="tel" id="documento" name="documento" placeholder="escribe tu dni...." required>
+      </div>
+    </div>
+    <div class="campo">
+      <label class="campo__label" for="pedido">Código de pedido:</label>
+      <div class="rellenar">
+        <i class="bi bi-qr-code-scan icn"></i>
+        <input class="campo__field" type="text" id="pedido" name="pedido" placeholder="escribe tu código...." required>
+      </div>
+    </div>
+    <div class="campo">
+      <input class="btn" type="submit" value="Buscar">
+    </div>
+  </div>
+  </form>
+</body>
+</html>
