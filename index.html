@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pedidos.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +26,12 @@
       <a href="#">Contácto</a>
       <a href="#">Pedidos</a>
     </nav>
-    <img class="menu-boton" src="./img/hamburger-menu.svg" alt="Menú">
+    
+      <img class="menu-boton" src="./img/hamburger-menu.svg" alt="Menú">
+    
   </menu>
 </header>
+<main>
   <form class="formulario"> <!--FORMULARIO-->
     <div class="bg">
     <div class="titulo-subtitulo">
@@ -58,7 +63,7 @@
       <label class="campo__label" for="pedido">Código de pedido:</label>
       <div class="rellenar">
         <i class="bi bi-qr-code-scan icn"></i>
-        <input class="campo__field" type="text" id="pedido" name="pedido" placeholder="escribe tu código...." required>
+        <input class="campo__field" type="text" id="pedido" name="pedido" placeholder="#64F7Q" required>
       </div>
     </div>
     <div class="campo">
@@ -66,5 +71,51 @@
     </div>
   </div>
   </form>
+  <div>
+    <h2 class="titulo">Juegos en Oferta</h2>
+  </div>
+  <section class="seccion">
+    <div id="carrusel" class="carrusel">
+      <a href="#" class="left-arrow"><img src="./img/icons8-izquierda-en-círculo-2-50.png" /></a>
+      <a href="#" class="right-arrow"><img src="./img/icons8-derecha-círculo-50.png"/></a>
+      <div class="carrusel-img">
+          <div class="product" id="product_0">
+              <img src="./img/MK11_Portada.webp" width="195" height="100" />
+              <h5>Lorem ipsum 1</h5>
+              <p>165.00 €</p>
+          </div>
+          <div class="product" id="product_1">
+              <img src="./img/cs2_portada.jpg" width="195" height="100" />
+              <h5>Lorem ipsum 2</h5>
+              <p>100.00 €</p>
+          </div>
+          <div class="product" id="product_2">
+              <img src="./img/re4_portada.jpg" width="195" height="100" />
+              <h5>Lorem ipsum 3</h5>
+              <p>250.00 €</p>
+          </div>
+          <div class="product" id="product_3">
+              <img src="" width="195" height="100" />
+              <h5>Lorem ipsum 4</h5>
+              <p>75.00 €</p>
+          </div>
+          <div class="product" id="product_4">
+              <img src="gallery/02.jpg" width="195" height="100" />
+              <h5>Lorem ipsum 5</h5>
+              <p>65.00 €</p>
+          </div>
+          <div class="product" id="product_5">
+              <img src="gallery/03.jpg" width="195" height="100" />
+              <h5>Lorem ipsum 6</h5>
+              <p>40.00 €</p>
+          </div>
+      </div>
+  </div>
+  </section>
+</main>
+  <!--agregar api al siguiente carrousel https://getbootstrap.com/docs/5.3/components/carousel/ -->
+<!-- <footer></footer> -->
+
+<script src="script.js"></script>
 </body>
 </html>

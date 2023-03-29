@@ -56,6 +56,7 @@ a {
     margin: -5rem auto 0 auto;
     width: 95%;
     padding: 5rem;
+    border-bottom: 1px solid black;
 }
 .bg {
     background-color: var(--color-secundario);
@@ -87,7 +88,7 @@ a {
     border: 1px solid var(--blanco);
 }
 .btn{
-    font-family: Roboto, sans-serif;
+    font-family: var(--font-family);
     font-weight: 0;
     font-size: 14px;
     color: #fff;
@@ -112,6 +113,57 @@ a {
     border: solid 1px #0066cc;
 }
 
+.titulo {
+    text-align: center;
+}
+/* carousel */
+.seccion {
+    display: flex;
+}
+.carrusel {
+    margin: 0 auto;
+}
+#carrusel {
+    float:left;
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+ 
+#carrusel .left-arrow {
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+#carrusel .right-arrow {
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+.carrusel-img >div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+ 
+.carrusel-img img {
+    cursor:pointer;
+}
+
+.product {
+    border:var(--negro) 2px solid;
+}
 @media (min-width: 768px){
    
 .menu-boton {
