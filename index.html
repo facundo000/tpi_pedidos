@@ -15,28 +15,28 @@
     <title>Pedidos</title>
 </head>
 <body>
-  <header> <!--HEADER-->
-  <menu class="barra">
-    <div class="logo">
-      <a href="pedidos.html"><img class="logo" src="./img/logo-tienda.png" alt="logo de tienda"></a>
+  <header class="header"> <!--HEADER-->
+    <div class="container">
+        <p class="logo">Vapor</p>
+            <img src="media/logo.png" alt="logo de la compañìa">
+        <nav>
+            <ul>
+                <li><a href="" class="nav-link">Inicio</a></li>
+                <li><a href="" class="nav-link" style="color:#1553a5 ;">Pedir</a></li>
+                <li><a href="" class="nav-link">Productos</a></li>
+                <li><a href="" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="" class="nav-link">Contacto</a></li>
+            </ul>     
+        </nav>
     </div>
-    <nav class="navegacion">
-      <a href="#">Inicio</a>
-      <a href="#">Presentación</a>
-      <a href="#">Contácto</a>
-      <a href="#">Pedidos</a>
-    </nav>
-    
-      <img class="menu-boton" src="./img/hamburger-menu.svg" alt="Menú">
-    
-  </menu>
 </header>
+<h1 class="titulo">Hacé el pedido de tu juego <span> Físico </span>a domicilio</h1>
 <main>
-  <form class="formulario"> <!--FORMULARIO-->
+  <form class="formulario" id="formularioPedidos"> <!--FORMULARIO-->
     <div class="bg">
     <div class="titulo-subtitulo">
-      <h2>Mis Pedidos</h2>
-      <h3>Completa los campos para obtener información de tu pedido.</h3>
+      <h2>Pedidos</h2>
+      <h3>Completá los campos para hacer tu pedido.</h3>
     </div>
     <div class="campo">
       <label class="campo__label" for="nombre">Nombre:</label>
@@ -60,62 +60,70 @@
       </div>
     </div>
     <div class="campo">
-      <label class="campo__label" for="pedido">Código de pedido:</label>
+      <label class="campo__label" for="pedido">Número de teléfono:</label>
       <div class="rellenar">
-        <i class="bi bi-qr-code-scan icn"></i>
-        <input class="campo__field" type="text" id="pedido" name="pedido" placeholder="#64F7Q" required>
+        <img class="img-icn" src="./iconos/telefono.svg" alt="icono de teléfono">
+        <input class="campo__field" type="text" id="telefono" name="telefono" placeholder="escribe tu número...." required>
+      </div>
+    </div>
+    <div class="cont-select sin-mrg">
+      <label class="campo__label" for="pais">País:</label>
+      <div class="selec_pais">
+        <img class="img-icn icn-select" src="./iconos/pais.svg" alt="icono de nacionalidad">
+        <select name="pais" id="pais">
+          <option value="none" disabled selected>Seleccionar País</option>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="uruguay">Uruguay</option>
+        </select>
+      </div>
+    </div>
+    <div class="cont-select">
+      <label class="campo__label" for="juego">Juego:</label>
+      <div class="selec_pais">
+        <img class="img-icn icn-select" src="./iconos/juego.svg" alt="">
+        <select name="juego" id="juego">
+          <option value="none" disabled selected>Seleccionar Juego</option>
+          <option value="counter strike 2">Counter Strike 2</option>
+          <option value="mortal kombat 11">Mortal kombat 11</option>
+          <option value="resident evil 4 remake">Resident Evil 4 Remake</option>
+        </select>
       </div>
     </div>
     <div class="campo">
-      <input class="btn" type="submit" value="Buscar">
+      <input class="btn-submit" type="submit" value="Buscar">
     </div>
   </div>
   </form>
-  <div>
-    <h2 class="titulo">Juegos en Oferta</h2>
-  </div>
-  <section class="seccion">
-    <div id="carrusel" class="carrusel">
-      <a href="#" class="left-arrow"><img src="./img/icons8-izquierda-en-círculo-2-50.png" /></a>
-      <a href="#" class="right-arrow"><img src="./img/icons8-derecha-círculo-50.png"/></a>
-      <div class="carrusel-img">
-          <div class="product" id="product_0">
-              <img src="./img/MK11_Portada.webp" width="195" height="100" />
-              <h5>Lorem ipsum 1</h5>
-              <p>165.00 €</p>
-          </div>
-          <div class="product" id="product_1">
-              <img src="./img/cs2_portada.jpg" width="195" height="100" />
-              <h5>Lorem ipsum 2</h5>
-              <p>100.00 €</p>
-          </div>
-          <div class="product" id="product_2">
-              <img src="./img/re4_portada.jpg" width="195" height="100" />
-              <h5>Lorem ipsum 3</h5>
-              <p>250.00 €</p>
-          </div>
-          <div class="product" id="product_3">
-              <img src="" width="195" height="100" />
-              <h5>Lorem ipsum 4</h5>
-              <p>75.00 €</p>
-          </div>
-          <div class="product" id="product_4">
-              <img src="gallery/02.jpg" width="195" height="100" />
-              <h5>Lorem ipsum 5</h5>
-              <p>65.00 €</p>
-          </div>
-          <div class="product" id="product_5">
-              <img src="gallery/03.jpg" width="195" height="100" />
-              <h5>Lorem ipsum 6</h5>
-              <p>40.00 €</p>
-          </div>
-      </div>
-  </div>
+  <section class="contenedorPedidos" id="contenedorPedidos">
   </section>
 </main>
-  <!--agregar api al siguiente carrousel https://getbootstrap.com/docs/5.3/components/carousel/ -->
-<!-- <footer></footer> -->
-
+<footer class="footer"> <!--FOOTER-->
+  <div class="cont-footer">
+    <div class="colmna-1">
+      <a href="" class="">Inicio</a>
+      <a href="" class="">Pedir</a>
+      <a href="" class="">Productos</a>
+      <a href="" class="">Sobre Nosotros</a>
+      <a href="" class="">Contacto</a>
+    </div>
+    <div class="columna-2">
+      <a href="" class="nav-link">Política y Privacidad</a>
+      <a href="" class="nav-link">Información Legal</a>
+      <a href="" class="nav-link">Reembolsos</a>
+      <a href="" class="nav-link">Cookies</a>
+    </div>
+    <div class="columna-3">
+      <p>Redes:</p>
+      <a href="#" class="icn-redes"><img class="redes f" src="./iconos/icons8-facebook.svg" alt="icono de facebook"></a>
+      <a href="#" class="icn-redes"><img class="redes t" src="./iconos/icons8-twitter.svg" alt="icono de twitter"></a>
+    </div>
+  </div>
+  <div class="final">
+    <div class="hr"></div>
+    <p class="copyright">©2023 . Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.</p>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
