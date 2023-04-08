@@ -14,7 +14,7 @@ const renderizarPedidos = () => {
                 <img class="img-juego" src="./img/cs2_portada.jpg" alt="portada counter strike 2">
                 <div class="botones">
                     <div class="btn-compra">$1000</div>
-                    <div class="btn">Pedir</div>
+                    <button class="btn">Pedir</button>
                 </div>
             </div>
             `
@@ -26,7 +26,7 @@ const renderizarPedidos = () => {
                 <img class="img-juego" src="./img/MK11_Portada.webp" alt="portada mortal kombat">
                 <div class="botones">
                     <div class="btn-compra">$3000</div>
-                    <div class="btn">Pedir</div>
+                    <button class="btn">Pedir</button>
                 </div>
             </div>
             `
@@ -38,7 +38,7 @@ const renderizarPedidos = () => {
                 <img class="img-juego" src="./img/re4_portada.jpg" alt="resident evil 4 remake">
                 <div class="botones">
                     <div class="btn-compra">$13000</div>
-                    <div class="btn">Pedir</div>
+                    <button class="btn">Pedir</button>
                 </div>
             </div>
             `
@@ -67,3 +67,5 @@ formularioPedidos.addEventListener("submit", (event) => {
     renderizarPedidos()
     formularioPedidos.reset()
 })
+
+

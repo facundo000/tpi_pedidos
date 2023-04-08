@@ -172,7 +172,7 @@ header a:hover{
     border: var(--color-principal);
     border-width: 1.5px;
     border-style: solid;
-    width: 22.5rem;
+    width: 21.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,8 +208,8 @@ select {
     padding: 10px 50px;
     transform : translateY(-0px);
     background-color: #fff;
-    color: #0066cc;
-    border: solid 1px #0066cc;
+    color: var(--color-secundario);
+    border: solid 1px var(--color-secundario);
 }
 .contenedorPedidos {
     display: flex;
@@ -239,7 +239,7 @@ select {
 }
 .btn-compra{ 
     width: 10rem;
-    color: #fff; 
+    color: var(--blanco); 
     background: #18A926; 
     min-height: 48px; 
     padding: 1rem 2.3rem;
@@ -294,7 +294,7 @@ p{
     padding-left: 1rem;
 }
 a:hover{
-    color: #1553a5;
+    color: var(--color-secundario);
 }
 .columna-2 {
     margin-top: -5rem;
@@ -328,7 +328,7 @@ a:hover{
 .hr {
     display: flex;
     flex-direction: column;
-    border-top: #fff solid 1px;
+    border-top: var(--blanco) solid 1px;
     width: 50%;
     margin: 0 auto;
 }
@@ -348,6 +348,7 @@ a:hover{
 .bg {
     margin: 0 15%; 
     }
+    /* FOOTER MQ */
     .footer a,
     p{
     font-size: 1.6rem;
@@ -355,7 +356,7 @@ a:hover{
     color: rgb(161, 144, 144);
     }
     a:hover{
-        color: #1553a5;
+        color: var(--color-secundario);
     }
 .columna-3 {
     display: flex;
