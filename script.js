@@ -13,8 +13,8 @@ const renderizarPedidos = () => {
                 <h2 class="titulo-juego">${pedido.juego}</h2>
                 <img class="img-juego" src="./img/cs2_portada.jpg" alt="portada counter strike 2">
                 <div class="botones">
-                    <div class="btn-compra">$1000</div>
-                    <button class="btn">Pedir</button>
+                    <div class="btn-compra"><p>$1000</p></div>
+                    <button class="btn"><p>Pedir</p></button>
                 </div>
             </div>
             `
@@ -25,8 +25,8 @@ const renderizarPedidos = () => {
                 <h2 class="titulo-juego">${pedido.juego}</h2>
                 <img class="img-juego" src="./img/MK11_Portada.webp" alt="portada mortal kombat">
                 <div class="botones">
-                    <div class="btn-compra">$3000</div>
-                    <button class="btn">Pedir</button>
+                    <div class="btn-compra"><p>$3000</p></div>
+                    <button class="btn"><p>Pedir</p></button>
                 </div>
             </div>
             `
@@ -37,8 +37,8 @@ const renderizarPedidos = () => {
                 <h2 class="titulo-juego">${pedido.juego}</h2>
                 <img class="img-juego" src="./img/re4_portada.jpg" alt="resident evil 4 remake">
                 <div class="botones">
-                    <div class="btn-compra">$13000</div>
-                    <button class="btn">Pedir</button>
+                    <div class="btn-compra"><p>$13000</p></div>
+                    <button class="btn"><p>Pedir</p></button>
                 </div>
             </div>
             `
@@ -46,7 +46,7 @@ const renderizarPedidos = () => {
         else {
             contenedorPedidos.innerHTML += `
             <div class="card-juegos">
-            <h2>No se seleccionó ningun videjuego</h2>
+            <h2>No se seleccionó ningún videjuego</h2>
             `
         }
 
